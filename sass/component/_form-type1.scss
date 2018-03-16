@@ -1,0 +1,72 @@
+.form-type1{
+  width: 120rem;
+  height: 70rem;
+  margin: 5% auto;
+  display: flex;
+  @include box-shadow-black;
+  border-radius: 1rem;
+  font-family: 'Roboto', sans-serif;
+
+
+  &__left{
+    width: 60rem;
+    @include linear-gradient-2;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  &__right{
+    width: 60rem;
+    background-color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    color: $color-grey-dark;
+
+    &-heading{
+      font-size: 5rem;
+      padding: 5rem 0 0 5rem;
+    }
+
+    &-text{
+      font-size: $default-font-size;
+      padding: 2rem 5rem 0 5rem;
+
+      &-special{
+        color: lightseagreen;
+      }
+    }
+
+    &__form{
+      margin-top: 4rem;
+    }
+    &__user, &__password{
+      width: 50rem;
+      margin: 0 auto;
+      padding-bottom: 4rem;
+
+      &-label{
+        font-size: 2.2rem;
+      }
+
+      &-box{
+        font-size: 2rem;
+        padding: 2rem;
+        border-radius: 7px;
+        width: 100%;
+        border-bottom: 3px solid transparent;
+        transition: all .5s;
+        background-color: $color-grey-light;
+        margin-top: 1rem;
+        color: $color-grey-dark;
+
+        &:focus{
+          border-bottom: 3px solid #0cebeb;
+        }
+      }
+
+
+    }
+
+  }
+}
